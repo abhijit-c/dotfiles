@@ -1,0 +1,17 @@
+# History control
+setopt HIST_IGNORE_BOTH
+setopt HIST_APPEND
+setopt SHARE_HISTORY
+HISTSIZE=32768
+SAVEHIST="${HISTSIZE}"
+HISTFILE=~/.zsh_history
+
+# Enable autocompletion
+autoload -Uz compinit
+compinit
+
+# Case insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# Set complete path
+export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omarchy/bin:$PATH"

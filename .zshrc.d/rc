@@ -1,0 +1,6 @@
+source ~/.zshrc.d/shell
+source ~/.zshrc.d/aliases
+source ~/.zshrc.d/functions
+source ~/.zshrc.d/prompt
+source ~/.zshrc.d/init
+source ~/.zshrc.d/envs
