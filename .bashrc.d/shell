@@ -10,5 +10,14 @@ if [[ ! -v BASH_COMPLETION_VERSINFO && -f /usr/share/bash-completion/bash_comple
 fi
 
 # Set complete path
-export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omarchy/bin:$PATH"
+export PATH="./bin:$HOME/.local/bin:$PATH"
+
+# texlive
+export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
+# zig
+export PATH="/opt/zig-x86_64-linux-0.15.0-dev.1380+e98aeeb73:$PATH"
+# nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 set +h
