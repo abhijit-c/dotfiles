@@ -1,6 +1,0 @@
-source ~/.bashrc.d/shell
-source ~/.bashrc.d/aliases
-source ~/.bashrc.d/functions
-source ~/.bashrc.d/prompt
-source ~/.bashrc.d/init
-source ~/.bashrc.d/envs
